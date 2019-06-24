@@ -27,9 +27,9 @@ namespace 'populate' do
       end
     end
 
-    30_000.times do
-      name = Faker::Name.name.split ' '
-      practitioner = Practitioner.create(first_name: name.first, last_name: name.last)
-    end
+    # 30_000.times do
+    #   name = Faker::Name.name.split ' '
+    #   practitioner = Practitioner.create(first_name: name.first, last_name: name.last)
+    # end
   end
 end
