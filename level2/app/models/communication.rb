@@ -8,5 +8,4 @@ class Communication < ApplicationRecord
       sent_at: sent_at
     }
   end
-
 end
