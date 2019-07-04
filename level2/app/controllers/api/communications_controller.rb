@@ -1,6 +1,8 @@
 class Api::CommunicationsController < ApplicationController
   def index
-    render json: Communication.all.to_json, status: :ok
+    # render json: Communication.all.to_json, status: :ok
+
+    render json: Communication.includes(:practitioner).to_json, status: :ok
   end
 
   def create
